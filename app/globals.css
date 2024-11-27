@@ -19,3 +19,32 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+html.dark {
+  --tw-bg-opacity: 1;
+  --tw-text-opacity: 1;
+  background-color: rgba(17, 24, 39, var(--tw-bg-opacity)); 
+  color: rgba(255, 255, 255, var(--tw-text-opacity)); 
+}
+
+.loader {
+  border: 8px solid rgba(255, 255, 255, 0.3); 
+  border-top: 8px solid white; 
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
